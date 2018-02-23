@@ -6,10 +6,6 @@ class EmailParser
   attr_accessor :emails 
   @@parse = []
   
-  def self.all 
-    @@parse 
-  end 
-  
   def initialize(emails) #emails is a string of emails
     email_array = emails.split(/[\s,]/)
     email_array.each do |email_address|
