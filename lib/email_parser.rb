@@ -15,18 +15,6 @@ class EmailParser
   def parse
     @emails.split.map do |email| #take the string of emails, splits them into substrings at whitespace points, and throws them into an array; loops through that array
       email.split(',') #takes each email element in the array and further splits it at commas
-    end.flatten.uniq 
+    end.flatten.uniq #flattens array and only shows unique elements
   end
-  
-  #def parse
-    #email_array = emails.split(/[\s,]/) #split the strings and spit out an array, store in email_array
-    #@emails.collect do |email_address| #loop through array
-    #  email_address.split(",")
-     # if email_address != "" #remove the empty strings
-    #  @@parse << email_address #add address to @@parse class variable (an array)
-     # end 
-    #end
-   #@@parse.uniq #returns array of only unique addresses
-  #end 
-  
 end 
