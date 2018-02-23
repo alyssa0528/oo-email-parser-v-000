@@ -16,6 +16,7 @@ class EmailParser
   end
   
   def parse
+    
    @@parse.uniq #returns array of only unique addresses
   end 
   
