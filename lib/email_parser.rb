@@ -20,7 +20,6 @@ class EmailParser
       end 
     end
    @@parse.uniq #returns array of only unique addresses
-  binding.pry 
   end 
   
 end 
