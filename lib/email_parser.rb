@@ -12,8 +12,11 @@ class EmailParser
     @emails = emails #writer method 
   end
   
-  
-
+  def parse
+    emails.split.map do |email|
+      email.split(',')
+    end.flatten.uniq
+  end
   
   def parse
     #email_array = emails.split(/[\s,]/) #split the strings and spit out an array, store in email_array
