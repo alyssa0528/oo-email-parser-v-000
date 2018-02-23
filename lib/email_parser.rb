@@ -15,7 +15,7 @@ class EmailParser
   def parse
     binding.pry 
     @emails.split.map do |email| #take the string of emails, splits them into substrings at whitespace points, and throws them into an array; loops through that array
-      email.split(',') #takes each email element in the array and further splits it at commas 
+      email_array = email.split(',') #takes each email element in the array and further splits it at commas 
     end.flatten.uniq
   end
   
